@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Sign in to LitigationOS.">
+  <meta name="theme-color" content="#07080b">
+  <title>Sign in | LitigationOS</title>
+  <style>
+    :root{--black:#07080b;--ink:#17120d;--orange:#ff8500;--cream:#f6f2ea;--line:#ded6ca}*{box-sizing:border-box}body{min-height:100vh;margin:0;background:radial-gradient(circle at 82% 20%,#5b3006,transparent 25%),linear-gradient(125deg,#07080b,#15100b);color:#fff;font:15px/1.5 Inter,Segoe UI,Arial,sans-serif;display:grid;place-items:center;padding:24px}body:before{content:"";position:fixed;inset:0;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:60px 60px;mask-image:linear-gradient(90deg,#000,transparent 90%)}.shell{width:min(100%,980px);min-height:590px;display:grid;grid-template-columns:1.05fr .95fr;position:relative;background:#fffdf9;color:var(--ink);border-radius:15px;overflow:hidden;box-shadow:0 30px 100px rgba(0,0,0,.45)}.brand-panel{padding:56px 50px;background:linear-gradient(150deg,#090a0e,#24180d);color:#fff;position:relative;overflow:hidden}.brand-panel:after{content:"L";position:absolute;right:-45px;bottom:-130px;font:600 430px Georgia,serif;color:rgba(255,133,0,.13)}.brand{position:relative;font:800 25px Georgia,serif}.brand b{color:var(--orange)}.brand-copy{position:relative;margin-top:115px;max-width:370px}.brand-copy h1{font:500 47px/1.02 Georgia,serif;letter-spacing:-2px;margin:0 0 18px}.brand-copy p{color:#c7bdaf;font-size:17px}.points{position:relative;margin:32px 0 0;padding:0;list-style:none;color:#ded4c7}.points li{margin:13px 0}.points li:before{content:"✓";color:var(--orange);font-weight:900;margin-right:10px}.form-panel{display:flex;justify-content:center;align-items:center;padding:45px}.form{width:min(100%,340px)}.form h2{font:500 35px Georgia,serif;letter-spacing:-1.4px;margin:0 0 8px}.form p{color:#67635d;margin:0 0 27px}.google{width:100%;border:1px solid var(--line);border-radius:7px;background:#fff;padding:13px;display:flex;align-items:center;justify-content:center;gap:11px;color:#282522;font:700 14px Inter,Segoe UI,Arial,sans-serif;cursor:pointer}.google:hover{border-color:#ffae55;background:#fffaf4}.google:disabled{opacity:.65;cursor:wait}.g{width:20px;height:20px;border-radius:50%;display:grid;place-items:center;font-weight:900;color:#4285f4;border:2px solid #4285f4;font-family:Arial}.or{display:flex;align-items:center;gap:11px;color:#9b958c;margin:25px 0;font-size:12px}.or:before,.or:after{content:"";height:1px;background:#e7e1d8;flex:1}.message{min-height:43px;border-radius:6px;padding:10px 11px;font-size:13px;color:#71695f;background:#f7f3ed}.message.error{color:#8b3700;background:#fff0df}.terms{font-size:11px;line-height:1.6;color:#80786f;margin-top:22px}.terms a{color:#9b5000}@media(max-width:720px){.shell{grid-template-columns:1fr;min-height:auto}.brand-panel{padding:35px}.brand-copy{margin-top:55px}.brand-copy h1{font-size:37px}.points{display:none}.form-panel{padding:38px 28px}}
+  </style>
+</head>
+<body data-page="login">
+  <main class="shell">
+    <section class="brand-panel">
+      <div class="brand">Litigation<b>OS</b></div>
+      <div class="brand-copy">
+        <h1>Legal intelligence,<br><span style="color:#ff8500">in motion.</span></h1>
+        <p>Your professional workspace for research, drafting, documents and matter intelligence.</p>
+        <ul class="points"><li>One secure personal workspace</li><li>Research and drafting with review controls</li><li>Built for the work of law</li></ul>
+      </div>
+    </section>
+    <section class="form-panel">
+      <div class="form">
+        <h2>Welcome to LitigationOS</h2>
+        <p>Create your account or sign in securely with Google to access the demo workspace.</p>
+        <button id="googleLogin" class="google" type="button"><span class="g">G</span> Continue with Google</button>
+        <div class="or">secure sign-in</div>
+        <div id="loginMessage" class="message">Use your Google account to create an account or sign in.</div>
+        <div class="terms">By continuing, you agree to use LitigationOS only for lawful purposes. AI-generated work must be reviewed and verified by a qualified legal professional.</div>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="/auth.js"></script>
+</body>
+</html>
