@@ -1,14 +1,14 @@
 // Firebase web configuration is safe to use in browser code.
 // Replace every value below with the configuration from Firebase Console → Project settings → Your apps → Web app.
-export const firebaseConfig = {
-  apiKey: "PASTE_YOUR_FIREBASE_API_KEY",
-  authDomain: "PASTE_YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "PASTE_YOUR_PROJECT_ID",
-  storageBucket: "PASTE_YOUR_PROJECT_ID.firebasestorage.app",
-  messagingSenderId: "PASTE_YOUR_MESSAGING_SENDER_ID",
-  appId: "PASTE_YOUR_APP_ID"
+const firebaseConfig = {
+  apiKey: "AIzaSyBevcly63_Tiz8gfWUXBcsgq1NIzoyW12M",
+  authDomain: "litigationos-5f623.firebaseapp.com",
+  projectId: "litigationos-5f623",
+  storageBucket: "litigationos-5f623.firebasestorage.app",
+  messagingSenderId: "337548081443",
+  appId: "1:337548081443:web:c9108154884fc67d717496",
+  measurementId: "G-5GJ8937JG8"
 };
-
 export const firebaseIsConfigured = !Object.values(firebaseConfig).some(
   (value) => value.includes("PASTE_YOUR")
 );
