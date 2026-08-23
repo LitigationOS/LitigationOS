@@ -1,0 +1,23 @@
+{
+  "name": "litigationos",
+  "version": "1.0.0",
+  "description": "LitigationOS - Legal intelligence in motion",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"No tests specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LitigationOS/LitigationOS.git"
+  },
+  "keywords": ["legal", "litigation", "legal-tech"],
+  "author": "LitigationOS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LitigationOS/LitigationOS/issues"
+  },
+  "homepage": "https://github.com/LitigationOS/LitigationOS#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
