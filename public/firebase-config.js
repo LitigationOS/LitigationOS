@@ -9,6 +9,5 @@ const firebaseConfig = {
   appId: "1:337548081443:web:c9108154884fc67d717496",
   measurementId: "G-5GJ8937JG8"
 };
-export const firebaseIsConfigured = !Object.values(firebaseConfig).some(
-  (value) => value.includes("PASTE_YOUR")
+export const firebaseIsConfigured = true;
 );
