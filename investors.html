@@ -26,4 +26,4 @@ body{background:#0d141e}main{background:radial-gradient(ellipse at 10% 0,#643516
 <footer><div class="wrap">© 2026 LitigationOS. <a class="back" href="/">Return to the website</a></div></footer>
 <script>
 document.getElementById('investorForm').addEventListener('submit',function(event){event.preventDefault();if(!this.reportValidity())return;const data=new FormData(this);const clean=key=>String(data.get(key)||'').trim();const subject='LitigationOS investor inquiry: '+clean('interest');const body=['Name: '+clean('name'),'Email: '+clean('email'),'Organisation: '+clean('organisation'),'Interest: '+clean('interest'),'','Message:',clean('message'),'','I consent to a reply about this inquiry.'].join('\n');window.location.href='mailto:Ruhan@litigationos.in?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);document.getElementById('status').textContent='Your email draft is ready to open. Please press Send in your email app. If no email app opens, write directly to Ruhan@litigationos.in.';});
-</script></body></html>
+</script><script src="/litigationos-chat.js" defer></script></body></html>
